@@ -5,8 +5,8 @@ resource "aws_db_instance" "wordpress" {
   engine_version       = "5.7"
   instance_class       = "db.t2.micro"
   identifier           = "terrawordpress"
-  username             = "wordpress"
-  password             = "charlesasirifi"  
+  username             = ""
+  password             = ""  
   parameter_group_name = "default.mysql5.7"
   skip_final_snapshot  = true
   vpc_security_group_ids = [aws_security_group.rds_sg.id]
